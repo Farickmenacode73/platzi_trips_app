@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hola mundo"),
         ),
-        body: new DescriptionPlace(),
+        body: new DescriptionPlace("Bahamas",4, "perro loco ansifhaisfgafglagkfjhgflajksgflakgfagfjdghalkjhgkjshkjgkljsfdgnsjklfbnkfjsbniouahgruiobjkldhgkajhnkljsng;ong;lkjagn;skjlgnsk;ljgnk;lsjgnljk;ng;ljsfngljk;g;slajghsak;ljghsjk;fhn"),
         ),
 
       );//MyHomePage(title: 'Flutter Demo Home Page'),
