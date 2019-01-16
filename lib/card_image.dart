@@ -35,7 +35,7 @@ class CardImage extends StatelessWidget {
       ),
     );
 
-    return null;
+    return card;
   }
 
 }
