@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Hola mundo Feliz"),
+          title: Text("Hola mundo Feliz 5461651631655161"),
         ),
         body: Center(
           child: Text("Hola mundo Platzi"),
