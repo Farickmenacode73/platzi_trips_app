@@ -1,0 +1,24 @@
+os: osx 
+idioma: generic 
+before_script: 
+- brew update 
+- brew install --HEAD usbmuxd 
+- brew desvincula usbmuxd 
+- brew link usbmuxd 
+- brew instala --HEAD libimobiledevice 
+- brew install ideviceinstaller 
+- brew instala ios-deploy 
+- git clone https: // github.com/flutter/flutter.git -b beta --depth 1 
+script: 
+- flutter / bin / flutter compilación ios --debug --no-codesign 
+cache: 
+  directorios: 
+  - $ HOME / .pub-cache 
+before_deploy: 
+  - pushd build / ios / iphoneos 
+  - mkdir Payload 
+  - cd Payload 
+  - ln -s ../Runner.app 
+  - cd .. 
+  - zip -r app.ipa Payload
+  - popd
